@@ -18,15 +18,32 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+/*コンポーネント*/
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 999px;
+  background: -moz-linear-gradient(top left, #fd95ff, #fda8db);
+  background: -webkit-linear-gradient(top left, #fd95ff, #fda8db);
+  background: linear-gradient(to bottom right, #fd95ff, #fda8db);
+}
 
 /*hero*/
+body {
+  background-image: url("../img/back-image.png"), url("../img/back-image2.png");
+  background-repeat: no-repeat;
+  background-position: top -58% left 5%, top 59% left 100%;
+  background-size: 734px 645px;
+}
 
 .header {
   /* position: sticky;
   top: 0;
   z-index: 2; */
   line-height: normal;
-  background-color: #fff;
 }
 
 .header .container {
@@ -49,8 +66,35 @@ img {
   margin-left: 48px;
 }
 
+.header .button {
+  width: 154px;
+  height: 36px;
+}
+
 .First-view .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 134px;
+}
+
+.First-view .text-contents .text {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.First-view .text-contents .sub-text {
+  width: 500px;
+  margin-top: 8px;
+}
+
+.First-view .text-contents .button {
+  width: 248px;
+  height: 56px;
+  margin-top: 28px;
+}
+
+.First-view .first-logo {
+  margin-left: 148px;
 }
