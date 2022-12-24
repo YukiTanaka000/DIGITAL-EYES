@@ -7,6 +7,10 @@ body {
   font-size: 14px;
   line-height: 1.8;
   color: #333;
+  font-family: "Josefin Sans", "YuGothic", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 2;
 }
 
 img {
@@ -38,8 +42,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 700;
 }
 
 .header .navigation .menu .item + .item {
   margin-left: 48px;
+}
+
+.First-view .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
