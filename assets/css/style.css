@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* base */
+
+body {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/*hero*/
+
+.header {
+  /* position: sticky;
+  top: 0;
+  z-index: 2; */
+  line-height: normal;
+  background-color: #fff;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(95%, 1440px);
+  height: 80px;
+  margin: 0 auto;
+}
+
+.header .navigation .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navigation .menu .item + .item {
+  margin-left: 48px;
+}
