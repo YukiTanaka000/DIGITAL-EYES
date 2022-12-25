@@ -4,13 +4,16 @@
 
 body {
   width: 100%;
-  font-size: 14px;
-  line-height: 1.8;
   color: #333;
   font-family: "Josefin Sans", "YuGothic", sans-serif;
   font-size: 16px;
   letter-spacing: 0.1em;
   line-height: 2;
+  font-weight: 400;
+  background-image: url("../img/back-image.png"), url("../img/back-image2.png");
+  background-repeat: no-repeat;
+  background-position: top -350px left 40px, top 330px left 725px;
+  background-size: 734px 645px;
 }
 
 img {
@@ -31,14 +34,21 @@ img {
   background: linear-gradient(to bottom right, #fd95ff, #fda8db);
 }
 
-/*hero*/
-body {
-  background-image: url("../img/back-image.png"), url("../img/back-image2.png");
-  background-repeat: no-repeat;
-  background-position: top -58% left 5%, top 59% left 100%;
-  background-size: 734px 645px;
+.title-contents {
 }
 
+.title {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.sub-title {
+  line-height: 1;
+}
+
+/*hero*/
 .header {
   /* position: sticky;
   top: 0;
@@ -93,8 +103,153 @@ body {
   width: 248px;
   height: 56px;
   margin-top: 28px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+}
+
+.First-view .text-contents .button .fa-solid {
+  align-items: center;
+  padding: 0 0 2px 8px;
 }
 
 .First-view .first-logo {
   margin-left: 148px;
+}
+
+.News {
+  padding-top: 120px;
+  position: relative;
+  left: 7.5%;
+}
+
+.News .container {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  margin-top: 64px;
+}
+
+.News .card {
+  background-color: #fff;
+  width: 340px;
+  height: 384px;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 6, 0.1));
+  flex-shrink: 0;
+}
+
+.News .card .card-img:hover {
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.News .card + .card {
+  margin-left: 72px;
+}
+
+.News .card .card-contents {
+  width: min(95%, 308px);
+  margin: 20px auto;
+}
+
+.News .card .card-contents .inner {
+  display: flex;
+  align-items: center;
+}
+
+.News .card-contents .inner .date {
+  color: #4444;
+}
+
+.News .card-contents .inner .tag {
+  width: 44px;
+  height: 16px;
+  margin-left: 16px;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  border-radius: 999px;
+  background: -moz-linear-gradient(top left, #fd95ff, #fda8db);
+  background: -webkit-linear-gradient(top left, #fd95ff, #fda8db);
+  background: linear-gradient(to bottom right, #fd95ff, #fda8db);
+}
+
+.Service {
+  padding: 64px 0;
+  border-top: solid 2px #eee;
+  width: min(95%, 1218px);
+  margin: 64px auto 0;
+}
+
+.Service .container {
+  margin-top: 64px;
+}
+.Service .container .item-contents {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Service .item {
+  position: relative;
+  top: 0px;
+}
+
+.Service .item .service-img {
+  width: 406px;
+  height: 250px;
+  filter: opacity(10%);
+}
+
+.Service .item .service-img:hover {
+  filter: blur(2px);
+  color: #fff;
+}
+
+.Service .service-text {
+  position: absolute;
+  top: 95px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 318px);
+  line-height: 1;
+}
+.Service .service-text .service-title {
+  font-size: 24px;
+}
+
+.Service .service-text .service-subtitle {
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 16px;
+}
+
+.Service .service-text .arrow-button {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fda5e1;
+  border-color: #fda5e1;
+  border-width: 2px;
+  border-radius: 999px;
+  line-height: 3;
+}
+
+.Service .button .fa-solid {
+  align-items: center;
+  padding: 0 0 4px 8px;
+}
+
+.Service .service-text .arrow-button:hover {
+  background-color: #fff;
+}
+
+.Service .container .button {
+  width: 248px;
+  height: 56px;
+  margin: 64px auto 0;
+  text-align: center;
 }
