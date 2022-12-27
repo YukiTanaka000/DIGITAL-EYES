@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   background-image: url("../img/back-image.png"), url("../img/back-image2.png");
   background-repeat: no-repeat;
-  background-position: top -350px left 40px, top 330px left 725px;
+  background-position: top -10% left 5%, top 10% left 101%;
   background-size: 734px 645px;
 }
 
@@ -57,15 +57,26 @@ img {
   padding: 0 0 4px 8px;
 }
 
+.arrow-button {
+  width: 50px;
+  height: 50px;
+  padding-left: 9px;
+  color: #fda5e1;
+  border-color: #fda5e1;
+  border-width: 2px;
+  border-radius: 999px;
+  line-height: 3;
+}
+
 /*hero*/
-.header {
+.Header {
   /* position: sticky;
   top: 0;
   z-index: 2; */
   line-height: normal;
 }
 
-.header .container {
+.Header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,18 +85,18 @@ img {
   margin: 0 auto;
 }
 
-.header .navigation .menu {
+.Header .navigation .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-weight: 700;
 }
 
-.header .navigation .menu .item + .item {
+.Header .navigation .menu .item + .item {
   margin-left: 48px;
 }
 
-.header .button {
+.Header .button {
   width: 154px;
   height: 36px;
 }
@@ -236,17 +247,6 @@ img {
   margin-top: 16px;
 }
 
-.Service .service-text .arrow-button {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  color: #fda5e1;
-  border-color: #fda5e1;
-  border-width: 2px;
-  border-radius: 999px;
-  line-height: 3;
-}
-
 .Service .service-text .arrow-button:hover {
   background-color: #fff;
 }
@@ -289,21 +289,27 @@ img {
 }
 .Recruit {
   padding: 64px 0;
+  background-image: url("../img/recruit-img1.png"),
+    url("../img/recruit-img2.png"), url("../img/recruit-img3.png"),
+    url("../img/recruit-img4.png");
+  background-repeat: no-repeat;
+  background-position: top 87% left 77%, top 9% left 62%, top 3% left 84%,
+    top 0% left -40%;
+  background-size: 258px 258px, 155px 155px, 96px 96px, 915px 915px;
 }
-.Recruit .recruit-title {
-}
-
 .Recruit .container {
-  margin-left: 112px;
+  padding-top: 84px;
 }
 
 .Recruit .container .recruit-img {
   width: 100%;
+  text-align: right;
+  position: relative;
 }
 
 .Recruit .title-contents {
   width: min(100%, 657px);
-  margin-top: 48px;
+  margin: 48px 0 0 185px;
 }
 
 .Recruit .title-contents .text {
@@ -316,4 +322,69 @@ img {
   width: 248px;
   height: 56px;
   margin-top: 40px;
+}
+
+.Contact-Access {
+  padding: 64px 0;
+}
+.Contact-Access .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Contact-Access .contact-img,
+.Contact-Access .access-img {
+  position: relative;
+}
+
+.Contact-Access .contact-img {
+  padding-right: 112px;
+  border-right: solid 2px #eee;
+  margin-right: 112px;
+}
+
+.Contact-Access .contents {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(95%, 424px);
+}
+
+.Contact-Access .contents .arrow-button:hover {
+  background-color: #fff;
+}
+
+.Contact-Access .contents .title-contents {
+  color: #fff;
+}
+
+.Footer {
+  border-top: solid 2px #eee;
+  padding: 64px 120px;
+  width: min(95%, 1216px);
+  margin: auto;
+}
+
+.Footer .container {
+  text-align: center;
+}
+
+.Footer .navigation {
+  font-weight: 600;
+  width: min(95%, 624px);
+  margin: 64px auto;
+}
+
+.Footer .navigation .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Footer .navigation .menu .item + .item {
+  border-left: solid 1px #eee;
+  padding-left: 24px;
 }
