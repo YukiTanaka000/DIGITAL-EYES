@@ -34,9 +34,6 @@ img {
   background: linear-gradient(to bottom right, #fd95ff, #fda8db);
 }
 
-.title-contents {
-}
-
 .title {
   font-size: 32px;
   line-height: 1;
@@ -46,6 +43,18 @@ img {
 
 .sub-title {
   line-height: 1;
+}
+
+.section-button {
+  width: 248px;
+  height: 56px;
+  margin: 64px auto 0;
+  text-align: center;
+}
+
+.fa-solid {
+  align-items: center;
+  padding: 0 0 4px 8px;
 }
 
 /*hero*/
@@ -119,8 +128,7 @@ img {
 
 .News {
   padding-top: 120px;
-  position: relative;
-  left: 7.5%;
+  margin-left: 112px;
 }
 
 .News .container {
@@ -140,7 +148,8 @@ img {
 }
 
 .News .card .card-img:hover {
-  background-color: #000;
+  /* background-color: #000; */
+  opacity: 0.8;
   border-radius: 10px;
 }
 
@@ -238,18 +247,73 @@ img {
   line-height: 3;
 }
 
-.Service .button .fa-solid {
-  align-items: center;
-  padding: 0 0 4px 8px;
-}
-
 .Service .service-text .arrow-button:hover {
   background-color: #fff;
 }
 
-.Service .container .button {
+.Projects {
+  margin-left: 112px;
+  padding: 64px 0;
+}
+
+.Projects .container {
+  margin-top: 64px;
+}
+
+.Projects .container .contents {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  width: min(100%, 1928px);
+}
+
+.Projects .projects-item {
+  width: min(100%, 560px);
+  flex-shrink: 0;
+}
+.Projects .projects-item + .projects-item {
+  margin-left: 64px;
+}
+
+.Projects .projects-item .projects-img:hover {
+  opacity: 0.9;
+}
+
+.Projects .text-contents {
+  margin-top: 16px;
+}
+
+.Projects .text-contents .projects-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.Recruit {
+  padding: 64px 0;
+}
+.Recruit .recruit-title {
+}
+
+.Recruit .container {
+  margin-left: 112px;
+}
+
+.Recruit .container .recruit-img {
+  width: 100%;
+}
+
+.Recruit .title-contents {
+  width: min(100%, 657px);
+  margin-top: 48px;
+}
+
+.Recruit .title-contents .text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 32px;
+}
+
+.Recruit .title-contents .button {
   width: 248px;
   height: 56px;
-  margin: 64px auto 0;
-  text-align: center;
+  margin-top: 40px;
 }
