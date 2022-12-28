@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   background-image: url("../img/back-image.png"), url("../img/back-image2.png");
   background-repeat: no-repeat;
-  background-position: top -10% left 5%, top 10% left 101%;
+  background-position: top -10% left 5%, top 10% left 109%;
   background-size: 734px 645px;
 }
 
@@ -416,6 +416,17 @@ img {
   border-left: solid 1px #eee;
 }
 /* ====レスポンシブ版==== */
+@media (max-width: 1362px) {
+  .Recruit {
+    background-image: url("../img/recruit-img1.png"),
+      url("../img/recruit-img2.png"), url("../img/recruit-img3.png"),
+      url("../img/recruit-img4.png");
+    background-repeat: no-repeat;
+    background-position: top 87% left 77%, top 9% left 62%, top 3% left 84%,
+      top 0% left -40%;
+    background-size: 242px 242px, 155px 155px, 96px 96px, 815px 815px;
+  }
+}
 
 @media (max-width: 1350px) {
   .News .title-contents,
@@ -453,11 +464,13 @@ img {
   .Service .service-text .service-subtitle {
     font-size: 14px;
   }
+
   .News .title-contents,
   .Projects .title-contents,
   .Service .title-contents {
     padding-left: 72px;
   }
+
   .News .contents,
   .Projects .container .contents {
     padding-left: 72px;
@@ -519,6 +532,18 @@ img {
   }
 }
 
+@media (max-width: 1029px) {
+  .Recruit {
+    background-image: url("../img/recruit-img1.png"),
+      url("../img/recruit-img2.png"), url("../img/recruit-img3.png"),
+      url("../img/recruit-img4.png");
+    background-repeat: no-repeat;
+    background-position: top 87% left 77%, top 9% left 62%, top 3% left 84%,
+      top 0% left -40%;
+    background-size: 232px 232px, 155px 155px, 96px 96px, 745px 745px;
+  }
+}
+
 @media (max-width: 1024px) {
   .Service .container {
     margin: 64px auto 0;
@@ -527,6 +552,14 @@ img {
 }
 
 @media (max-width: 930px) {
+  body {
+    background-image: url("../img/back-image.png"),
+      url("../img/back-image2.png");
+    background-repeat: no-repeat;
+    background-position: top -8% left 5%, top 8% left 109%;
+    background-size: 596px 531px;
+  }
+
   .First-view .text-contents .sub-text {
     display: none;
   }
@@ -559,6 +592,16 @@ img {
     font-size: 16px;
     width: min(95%, 457px);
   }
+
+  .Recruit {
+    background-image: url("../img/recruit-img1.png"),
+      url("../img/recruit-img2.png"), url("../img/recruit-img3.png"),
+      url("../img/recruit-img4.png");
+    background-repeat: no-repeat;
+    background-position: top 87% left 77%, top 9% left 62%, top 3% left 84%,
+      top 0% left -30%;
+    background-size: 232px 232px, 155px 155px, 96px 96px, 645px 645px;
+  }
 }
 
 @media (max-width: 830px) {
@@ -566,6 +609,7 @@ img {
     font-size: 28px;
   }
 }
+
 @media (max-width: 780px) {
   .First-view .first-logo {
     width: 280px;
@@ -586,6 +630,14 @@ img {
 }
 
 @media (max-width: 744px) {
+  body {
+    background-image: url("../img/back-image.png"),
+      url("../img/back-image2.png");
+    background-repeat: no-repeat;
+    background-position: top -8% left 5%, top 8% left 109%;
+    background-size: 450px 400px;
+  }
+
   .Recruit .recruit-img {
     display: none;
   }
@@ -626,6 +678,7 @@ img {
   .Footer .navigation .menu .item {
     padding: 12px;
   }
+
   .Footer .navigation .menu .item + .item {
     border: none;
   }
@@ -681,6 +734,16 @@ img {
   .Recruit .tblet-img {
     padding-left: 32px;
   }
+
+  .Recruit {
+    background-image: url("../img/recruit-img1.png"),
+      url("../img/recruit-img2.png"), url("../img/recruit-img3.png"),
+      url("../img/recruit-img4.png");
+    background-repeat: no-repeat;
+    background-position: top 70% left 77%, top 9% left 52%, top 3% left 84%,
+      top 0% left -10%;
+    background-size: 120px 120px, 90px 90px, 65px 65px, 500px 500px;
+  }
 }
 
 @media (max-width: 565px) {
@@ -692,6 +755,7 @@ img {
     padding-bottom: 64px;
   }
 }
+
 @media (max-width: 475px) {
   .Contact-Access .contents {
     position: absolute;
@@ -707,6 +771,16 @@ img {
     height: 40px;
     padding-left: 5px;
     line-height: 2.5;
+  }
+
+  .Recruit {
+    background-image: url("../img/recruit-img1.png"),
+      url("../img/recruit-img2.png"), url("../img/recruit-img3.png"),
+      url("../img/recruit-img4.png");
+    background-repeat: no-repeat;
+    background-position: top 70% left 77%, top 9% left 52%, top 3% left 84%,
+      top 0% left -5%;
+    background-size: 120px 120px, 90px 90px, 65px 65px, 450px 450px;
   }
 }
 
@@ -761,6 +835,7 @@ img {
     padding-left: 32px;
   }
 }
+
 @media (max-width: 400px) {
   .First-view .container {
     display: block;
