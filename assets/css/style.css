@@ -207,7 +207,8 @@ img {
 .Service {
   padding: 64px 0;
   border-top: solid 2px #eee;
-  margin-top: 64px;
+  margin: 64px auto 0;
+  width: min(95%, 1216px);
 }
 
 .Service .title-contents {
@@ -325,17 +326,19 @@ img {
   width: 100%;
   text-align: right;
   position: relative;
+  padding-left: 88px;
 }
 
-/* .Recruit .title-contents {
-  width: min(100%, 657px);
-  margin: 48px 0 0 185px;
-} */
+.Recruit .title-contents {
+  padding-left: 185px;
+  margin-top: 64px;
+}
 
 .Recruit .title-contents .text {
   font-size: 24px;
   font-weight: 600;
   margin-top: 32px;
+  width: min(95%, 657px);
 }
 
 .Recruit .title-contents .button {
@@ -475,6 +478,10 @@ img {
   .First-view .text-contents .sub-text {
     width: 450px;
   }
+
+  .Recruit .title-contents {
+    padding-left: 120px;
+  }
 }
 
 @media (max-width: 1046px) {
@@ -524,6 +531,15 @@ img {
   .Service .service-text .service-subtitle {
     font-size: 14px;
   }
+
+  .Recruit .title-contents .title {
+    font-size: 24px;
+  }
+
+  .Recruit .title-contents .text {
+    font-size: 16px;
+    width: min(95%, 457px);
+  }
 }
 
 @media (max-width: 830px) {
@@ -531,7 +547,6 @@ img {
     font-size: 28px;
   }
 }
-
 @media (max-width: 780px) {
   .First-view .first-logo {
     width: 280px;
@@ -548,7 +563,24 @@ img {
   }
 
   .Projects .container .contents {
-    padding-left: 48px;
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 744px) {
+  .Recruit .recruit-img {
+    display: none;
+  }
+
+  .Recruit .tblet-img {
+    width: 100%;
+    text-align: right;
+    position: relative;
+    padding-left: 64px;
+  }
+
+  .Recruit .title-contents {
+    padding-left: 104px;
   }
 }
 
@@ -566,13 +598,18 @@ img {
 
 @media (max-width: 682px) {
   .Service .item .service-img {
-    width: 406px;
+    width: 398px;
     height: 250px;
   }
 
   .Service .container {
-    width: min(95%, 406px);
+    width: min(95%, 398px);
     margin: 64px auto 0;
+  }
+
+  .Service .service-text {
+    width: min(100%, 318px);
+    margin: auto;
   }
 }
 
@@ -601,16 +638,30 @@ img {
     width: 232px;
     height: 48px;
   }
+
+  .Recruit .title-contents {
+    padding-left: 88px;
+  }
+
+  .Recruit .tblet-img {
+    padding-left: 32px;
+  }
+}
+
+@media (max-width: 565px) {
+  .Recruit .title-contents .text {
+    width: min(95%, 300px);
+  }
 }
 
 @media (max-width: 430px) {
   .Service .item .service-img {
-    width: 315px;
+    width: 308px;
     height: 195px;
   }
 
   .Service .container {
-    width: min(100%, 315px);
+    width: min(100%, 308px);
     margin: 64px auto 0;
   }
 
@@ -621,8 +672,25 @@ img {
   .Service .service-text .service-subtitle {
     font-size: 14px;
   }
-}
+  .Service .service-text {
+    width: min(100%, 260px);
+    margin: auto;
+  }
 
+  .Recruit .container .tblet-img {
+    display: none;
+  }
+
+  .Recruit .container .sp-img {
+    width: 100%;
+    text-align: right;
+    position: relative;
+    padding-left: 32px;
+  }
+  .Recruit .title-contents {
+    padding-left: 32px;
+  }
+}
 @media (max-width: 400px) {
   .First-view .container {
     display: block;
@@ -652,12 +720,24 @@ img {
   }
 
   .Projects .container .contents {
-    padding-left: 16px;
+    padding: 0 16px;
   }
 }
 
 @media (min-width: 1161px) {
   .Header .container .drawer {
+    display: none;
+  }
+}
+
+@media (min-width: 745px) {
+  .Recruit .container .tblet-img {
+    display: none;
+  }
+}
+
+@media (min-width: 431px) {
+  .Recruit .container .sp-img {
     display: none;
   }
 }
