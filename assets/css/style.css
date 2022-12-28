@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /* base */
-
 body {
   width: 100%;
   color: #333;
@@ -21,6 +20,7 @@ img {
   height: auto;
   vertical-align: bottom;
 }
+
 /*コンポーネント*/
 .button {
   display: flex;
@@ -66,6 +66,10 @@ img {
   border-width: 2px;
   border-radius: 999px;
   line-height: 3;
+}
+
+.arrow-button:hover {
+  background-color: #fff;
 }
 
 /*hero*/
@@ -258,10 +262,6 @@ img {
   font-size: 16px;
   line-height: 1;
   margin-top: 16px;
-}
-
-.Service .service-text .arrow-button:hover {
-  background-color: #fff;
 }
 
 .Projects {
@@ -621,9 +621,11 @@ img {
   .Service .title-contents {
     padding-left: 48px;
   }
+
   .News .contents {
     padding-left: 48px;
   }
+
   .Projects .container .contents {
     padding: 0 48px;
   }
@@ -634,7 +636,7 @@ img {
     background-image: url("../img/back-image.png"),
       url("../img/back-image2.png");
     background-repeat: no-repeat;
-    background-position: top -8% left 5%, top 8% left 109%;
+    background-position: top -5% left 5%, top 8% left 109%;
     background-size: 450px 400px;
   }
 
@@ -702,6 +704,14 @@ img {
 }
 
 @media (max-width: 650px) {
+  body {
+    background-image: url("../img/back-image.png"),
+      url("../img/back-image2.png");
+    background-repeat: no-repeat;
+    background-position: top -2% left 5%, top 6% left 100%;
+    background-size: 345px 308px;
+  }
+
   .First-view .container {
     display: block;
     margin: 134px auto 0;
@@ -784,6 +794,16 @@ img {
   }
 }
 
+@media (max-width: 540px) {
+  body {
+    background-image: url("../img/back-image.png"),
+      url("../img/back-image2.png");
+    background-repeat: no-repeat;
+    background-position: top -2.5% left 20%, top 6% left -10%;
+    background-size: 345px 308px;
+  }
+}
+
 @media (max-width: 450px) {
   .News .title-contents,
   .Projects .title-contents,
@@ -799,6 +819,14 @@ img {
 }
 
 @media (max-width: 430px) {
+  body {
+    background-image: url("../img/back-image.png"),
+      url("../img/back-image2.png");
+    background-repeat: no-repeat;
+    background-position: top -2.5% left 20%, top 6% left 120%;
+    background-size: 295px 274px;
+  }
+
   .Service .item .service-img {
     width: 308px;
     height: 195px;
