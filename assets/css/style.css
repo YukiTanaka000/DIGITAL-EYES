@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   background-image: url("../img/back-image.png"), url("../img/back-image2.png");
   background-repeat: no-repeat;
-  background-position: top -10% left 5%, top 10% left 109%;
+  background-position: top -7% left 5%, top 10% left 109%;
   background-size: 734px 645px;
 }
 
@@ -160,6 +160,11 @@ img {
   overflow-x: scroll;
   margin-top: 64px;
   padding-left: 112px;
+  -ms-overflow-style: none;
+}
+
+.News .contents::-webkit-scrollbar {
+  display: none;
 }
 
 .News .card {
@@ -282,6 +287,11 @@ img {
   overflow-x: scroll;
   width: min(100%, 1928px);
   padding-left: 112px;
+  -ms-overflow-style: none;
+}
+
+.Projects .container .contents::-webkit-scrollbar {
+  display: none;
 }
 
 .Projects .projects-item {
