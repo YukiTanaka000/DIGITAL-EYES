@@ -195,11 +195,11 @@ img {
   align-items: center;
 }
 
-.News .card-contents .inner .date {
+.News .card-contents .date {
   color: #4444;
 }
 
-.News .card-contents .inner .tag {
+.News .card-contents .tag {
   width: 44px;
   height: 16px;
   margin-left: 16px;
